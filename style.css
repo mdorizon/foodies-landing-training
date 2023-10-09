@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Mada:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-main: #06c167;
+  --color-light: #f3fcf7;
+  --color-100: #1d1d1f;
+  --color-300: #545459;
+  --color-800: #c5cec9;
+  --color-paper: #ffffff;
+
+  --size-3xs: 2px;
+  --size-2xs: 4px;
+  --size-xs: 6px;
+  --size-sm: 8px;
+  --size-md: 12px;
+  --size-lg: 16px;
+  --size-xl: 20px;
+  --size-2xl: 24px;
+  --size-3xl: 32px;
+  --size-4xl: 40px;
+  --size-5xl: 48px;
+  --size-section: 96px;
+}
+
+html,
+body {
+  font-family: Mada;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* header */
+
+header {
+  padding: var(--size-5xl) var(--size-3xl);
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-3xl);
+}
+
+.menu {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  height: var(--size-xl);
+}
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-4xl);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-3xs);
+}
