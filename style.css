@@ -91,7 +91,57 @@ header {
   color: var(--color-main);
 }
 
+.active a:after {
+  content: ".";
+}
+
 .header-content {
   display: flex;
+  flex-direction: row;
   max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  gap: var(--size-3xl);
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--size-5xl);
+}
+
+.title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--size-3xl);
+}
+
+.title-content h1 {
+  color: var(--color-100);
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 80px;
+}
+
+.title-content p {
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: var(--size-4xl);
+}
+
+#deliveroo {
+  height: var(--size-3xl);
+}
+
+#foodora {
+  height: var(--size-2xl);
+}
+
+#uber-eat {
+  height: var(--size-xl);
 }
