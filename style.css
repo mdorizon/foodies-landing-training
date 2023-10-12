@@ -94,6 +94,15 @@ header {
   line-height: 24px;
 }
 
+.nav-burger {
+  display: none;
+}
+
+.nav-burger {
+  width: 24px;
+  height: 24px;
+}
+
 .active a {
   color: var(--color-main);
   display: flex;
@@ -383,47 +392,103 @@ header {
 @media screen and (max-width: 920px) {
 
   .header-content {
-    flex-direction: column;
     gap: var(--size-5xl);
   }
 
   .title-container,
-  .title-content {
+  .title-content,
+  .benefits-content,
+  .benefits-title-container {
     align-items: center;
   }
 
-  .title-content h1 {
+  .title-content h1,
+  .title-content p,
+  .benefits-title-container h2 {
     text-align: center;
+  }
+
+  .advantage-item,
+  .section-benefits,
+  .header-content {
+    flex-direction: column;
   }
 
   .title-content p {
     max-width: 400px;
     width: 100%;
-    text-align: center;
-  }
-
-  .advantage-item {
-    flex-direction: column;
-  }
-
-  .section-benefits {
-    flex-direction: column;
-  }
-
-  .benefits-content {
-    align-items: center;
-  }
-
-  .benefits-title-container {
-    align-items: center;
-  }
-
-  .benefits-title-container h2 {
-    text-align: center;
   }
 }
 
 /* mobile */
 @media screen and (max-width: 690px) {
+
+  header {
+    padding: var(--size-3xl) var(--size-xl);
+    gap: var(--size-3xl);
+  }
+
+  main {
+    padding: var(--size-5xl) var(--size-xl);
+    gap: var(--size-5xl);
+  }
+
+  .title-content h2 {
+    font-size: 3.375rem;
+    line-height: 64px;
+  }
+
+  .brand-container {
+    gap: var(--size-2xl);
+  }
+
+  #deliveroo {
+    height: var(--size-2xl);
+  }
+  
+  #foodora {
+    height: var(--size-xl);
+  }
+  
+  #uber-eat {
+    height: var(--size-md);
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .nav-burger {
+    display: block;
+  }
+
+  .section-advantages {
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 420px;
+    gap: var(--size-xl);
+  }
+
+  .advantage-item {
+    min-width: 128px;
+  }
+
+  .advantage-content {
+    align-items: center;
+  }
+
+  .benefits-cover-container {
+    padding: var(--size-2xl);
+  }
+
+  .benefits-title-container h2 {
+    font-size: 2.25rem;
+    line-height: 48px;
+  }
+
+
+  
   
 }
