@@ -126,6 +126,32 @@ header {
 }
 
 .title-content p {
+  color: var(--color-300);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.title-button {
+  display: flex;
+  padding: var(--size-lg) var(--size-3xl);
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-sm);
+  border-radius: 41px;
+  background-color: var(--color-main);
+}
+
+.title-button p {
+  color: var(--color-paper);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.title-button div {
+  height: 24px;
 }
 
 .brand-container {
@@ -145,3 +171,12 @@ header {
 #uber-eat {
   height: var(--size-xl);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--size-section) var(--size-3xl);
+  gap: var(--size-section);
+}
+
