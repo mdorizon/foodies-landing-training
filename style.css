@@ -31,6 +31,14 @@ body {
   font-size: 16px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--size-section) var(--size-3xl);
+  gap: var(--size-section);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -88,6 +96,8 @@ header {
 
 .active a {
   color: var(--color-main);
+  display: flex;
+  flex-direction: column;
 }
 
 .active a:after {
@@ -170,13 +180,7 @@ header {
   height: var(--size-xl);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: var(--size-section) var(--size-3xl);
-  gap: var(--size-section);
-}
+/* Advantages section */
 
 .section-advantages {
   display: flex;
@@ -222,3 +226,115 @@ main {
   line-height: 16px;
 }
 
+/* Benefits section */
+
+.section-benefits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.benefits-cover-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--size-5xl);
+  background: var(--color-light);
+}
+
+.benefits-cover-container img {
+  max-width: 445px;
+  width: 100%;
+}
+
+.benefits-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 530px;
+  width: 100%;
+  gap: var(--size-2xl);
+}
+
+.benefits-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--size-md);
+}
+
+.benefits-title-container p {
+  color: var(--color-100);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.benefits-title-container h2 {
+  color: var(--color-100);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--size-lg);
+}
+
+.benefits-item {
+  display: flex;
+  align-items: center;
+  gap: var(--size-xl);
+}
+
+.benefits-item p {
+  color: var(--color-100);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.benefits-item div {
+  height: 24px;
+}
+
+.benefits-button {
+  display: flex;
+  padding: var(--size-lg) var(--size-3xl);
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-sm);
+  border-radius: 41px;
+  background-color: var(--color-main);
+}
+
+.benefits-button p {
+  color: var(--color-paper);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.benefits-button div {
+  height: 24px;
+}
+
+/* Laptop */
+@media screen and (max-width: 1200px) {
+  
+}
+
+/* tablette */
+@media screen and (max-width: 920px) {
+  
+}
+
+/* mobile */
+@media screen and (max-width: 690px) {
+  
+}
