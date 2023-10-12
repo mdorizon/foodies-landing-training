@@ -98,10 +98,15 @@ header {
   color: var(--color-main);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .active a:after {
-  content: ".";
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: var(--color-main);
+  border-radius: 12px;
 }
 
 .header-content {
@@ -111,6 +116,14 @@ header {
   width: 100%;
   align-items: center;
   gap: var(--size-3xl);
+}
+
+.header-cover #img1 {
+  display: block;
+}
+
+.header-cover #img2 {
+  display: none;
 }
 
 .title-container {
@@ -326,12 +339,88 @@ header {
 
 /* Laptop */
 @media screen and (max-width: 1200px) {
+
+  header {
+    gap: var(--size-4xl);
+  }
+
+  .title-content h1 {
+    font-size: 4rem;
+  }
+
+  .header-cover #img1 {
+    display: none;
+  }
+  
+  .header-cover #img2 {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .section-benefits {
+    gap: 40px;
+    justify-content: flex-start;
+  }
+
+  .benefits-content {
+    max-width: 400px;
+  }
+
+  .benefits-title-container h2 {
+    font-size: 3rem;
+    line-height: 56px;
+  }
+
+  .benefits-cover-container {
+    padding: var(--size-4xl);
+  }
+
   
 }
 
 /* tablette */
 @media screen and (max-width: 920px) {
-  
+
+  .header-content {
+    flex-direction: column;
+    gap: var(--size-5xl);
+  }
+
+  .title-container,
+  .title-content {
+    align-items: center;
+  }
+
+  .title-content h1 {
+    text-align: center;
+  }
+
+  .title-content p {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .advantage-item {
+    flex-direction: column;
+  }
+
+  .section-benefits {
+    flex-direction: column;
+  }
+
+  .benefits-content {
+    align-items: center;
+  }
+
+  .benefits-title-container {
+    align-items: center;
+  }
+
+  .benefits-title-container h2 {
+    text-align: center;
+  }
 }
 
 /* mobile */
