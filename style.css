@@ -86,6 +86,11 @@ header {
   gap: var(--size-3xs);
 }
 
+.nav-item a:hover {
+  color: var(--color-main);
+  transition: 400ms;
+}
+
 .nav-item a {
   color: var(--color-100);
   text-align: center;
@@ -425,7 +430,6 @@ header {
 
   header {
     padding: var(--size-3xl) var(--size-xl);
-    gap: var(--size-3xl);
   }
 
   main {
